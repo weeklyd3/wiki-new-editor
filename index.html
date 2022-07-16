@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width,inital-scale=1.0" /><title>New editor prototype</title></head>
+<body>
+<label for="editor">Write text here:</label>
+<textarea rows="5" cols="50" id="editor">Here is some **bold text**
+
+and some *italic text*
+<!-- this is a comment -->
+</textarea>
+<script src="editor.js"></script>
+<script>const ed = initEditor(document.querySelector('#editor'), true);</script>
+</body>
+</html>

@@ -94,7 +94,7 @@ class markdownEditor {
     surroundIfNotAlready(before, after, defaultValue = 'just an example') {
         if (!this.getSelection()) {
             this.insert(defaultValue);
-            this.textarea.selectionStart -= (defaultValue.length + 1);
+            this.textarea.selectionStart -= (defaultValue.length);
         }
         if (this.isAround(before, after)) this.removeAround(before.length, after.length);
         else this.addAround(before, after);
